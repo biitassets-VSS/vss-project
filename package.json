@@ -12,11 +12,5 @@
     "next": "latest",
     "react": "latest",
     "react-dom": "latest"
-  },
-  "eslint": {
-    "ignoreDuringBuilds": true
-  },
-  "typescript": {
-    "ignoreBuildErrors": true
   }
 }
