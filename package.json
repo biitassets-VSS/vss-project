@@ -11,5 +11,21 @@
     "@supabase/supabase-js": "^2.0.0",
     "dotenv": "^16.0.0"
   }
+  {
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "Supabase test project",
+  "main": "test.js",
+  "type": "module", 
+  "scripts": {
+    "start": "node test.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.0.0",
+    "dotenv": "^16.0.0"
+  }
+}
+
+
 }
 
