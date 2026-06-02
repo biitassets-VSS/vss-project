@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  reactStrictMode: true,
   images: {
     remotePatterns: [
       {
@@ -14,14 +15,12 @@ const nextConfig = {
   },
 };
 
-// ⚠️ CRITICAL: This catches hidden build errors that Next.js hides
-process.on('unhandledRejection', (error) => {
-  console.log('❌ unhandledRejection:', error);
+process.on("unhandledRejection", (error) => {
+  console.error("unhandledRejection:", error);
 });
 
-process.on('uncaughtException', (error) => {
-  console.log('❌ uncaughtException:', error);
+process.on("uncaughtException", (error) => {
+  console.error("uncaughtException:", error);
 });
 
 module.exports = nextConfig;
-
