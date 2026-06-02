@@ -1,5 +1,5 @@
 {
-  "name": "vss-project",
+  "name": "vss",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -9,8 +9,14 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.0.0",
-    "next": "latest",
+    "next": 14.2.5",
     "react": "latest",
     "react-dom": "latest"
   }
+  
+"engines": {
+  "node": "20.x"
+}
+``
+
 }
