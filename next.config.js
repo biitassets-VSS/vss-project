@@ -14,4 +14,14 @@ const nextConfig = {
   },
 };
 
+// ⚠️ CRITICAL: This catches hidden build errors that Next.js hides
+process.on('unhandledRejection', (error) => {
+  console.log('❌ unhandledRejection:', error);
+});
+
+process.on('uncaughtException', (error) => {
+  console.log('❌ uncaughtException:', error);
+});
+
 module.exports = nextConfig;
+
