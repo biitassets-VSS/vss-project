@@ -6,7 +6,7 @@ import Link      from "next/link";
 import { BRAND } from "@/lib/constants";
 
 type Props = { role?: string };
-
+mport Navbar from './components/Navbar'
 export default function Navbar({ role }: Props) {
   return (
     <nav className="bg-white border-b border-gray-100 shadow-sm
